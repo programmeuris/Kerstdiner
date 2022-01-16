@@ -23,7 +23,7 @@ namespace Kerstdiner.Models
         // using n2 instead of c2 and adding € manually because my locale is set to en-US
         public override bool Equals(object obj) => (obj as DinerReservatie).Naam == Naam;
 
-        public override string ToString() => $"{this.GetType().Name[0..^10]} {Naam} {Totaal():n2} €";
+        public override string ToString() => $"{this.GetType().Name[0..^10]}\t{Naam}\t{Totaal():n2} €";
 
         public virtual double Totaal() => AantalPersonen * PrijsHoofdgerecht;
 

@@ -6,4 +6,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kerstdiner.DAL\Kerstdiner.DAL.csproj" />
+    <ProjectReference Include="..\Kerstdiner.Models\Kerstdiner.Models.csproj" />
+  </ItemGroup>
+
 </Project>

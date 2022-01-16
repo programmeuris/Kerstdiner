@@ -24,25 +24,30 @@
                   Header="Type">
             <StackPanel Orientation="Horizontal">
                 <RadioButton x:Name="rdbDiner"
-                             Content="Diner"/>
+                             Content="Diner"
+                             Checked="DinerType_Checked"/>
                 <RadioButton x:Name="rdbKerstdiner"
-                             Content="Kerstdiner"/>
+                             Content="Kerstdiner"
+                             Checked="DinerType_Checked"/>
             </StackPanel>
         </GroupBox>
         <Button x:Name="btnToonReservaties"
                 Content="Toon reservaties"
                 Grid.Row="0"
                 Grid.Column="2"
-                Height="auto"/>
+                Height="auto"
+                Click="Button_Click"/>
         <StackPanel Grid.Row="1"
                     Grid.Column="0"
                     Orientation="Vertical">
             <Label Content="Naam"/>
             <Label Content="Aantal"/>
             <Label Content="Hoofdgerecht"/>
-            <Label Content="Nagerecht"/>
+            <Label Content="Nagerecht"
+                   x:Name="lblNagerecht"/>
             <Button Content="Boeken"
-                    x:Name="btnBoeken"/>
+                    x:Name="btnBoeken"
+                    Click="Button_Click"/>
         </StackPanel>
         <StackPanel Grid.Row="1"
                     Grid.Column="1"
@@ -52,7 +57,8 @@
             <ComboBox x:Name="cboHoofdgerecht"/>
             <ComboBox x:Name="cboNagerecht"/>
             <Button x:Name="btnSluiten"
-                    Content="Sluiten"/>
+                    Content="Sluiten"
+                    Click="Button_Click"/>
         </StackPanel>
         <Label Grid.Row="1"
                Grid.Column="2"

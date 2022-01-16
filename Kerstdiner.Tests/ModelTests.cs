@@ -12,7 +12,7 @@ namespace Kerstdiner.Tests
         {
             var subject = new DinerReservatie("Smith", 1, "Steak", 69);
 
-            Assert.AreEqual("Diner Smith 69,00 €", subject.ToString());
+            Assert.AreEqual("Diner\tSmith\t69,00 €", subject.ToString());
         }
 
         [Test]

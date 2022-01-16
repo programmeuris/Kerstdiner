@@ -1,0 +1,5 @@
+﻿tongrolletjes;25,20;hoofdgerecht
+varkenshaasje;22,50;hoofdgerecht
+chocomousse;4,00;nagerecht
+tiramisu;5,00;nagerecht
+sabayon;5,50;nagerecht
