@@ -1,0 +1,61 @@
+﻿<Window x:Class="Kerstdiner.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kerstdiner.WPF"
+        mc:Ignorable="d"
+        Title="Jos Smets" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox x:Name="rdbGroup"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2"
+                  Header="Type">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="rdbDiner"
+                             Content="Diner"/>
+                <RadioButton x:Name="rdbKerstdiner"
+                             Content="Kerstdiner"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnToonReservaties"
+                Content="Toon reservaties"
+                Grid.Row="0"
+                Grid.Column="2"/>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="0"
+                    Orientation="Vertical">
+            <Label Content="Naam"/>
+            <Label Content="Aantal"/>
+            <Label Content="Hoofdgerecht"/>
+            <Label Content="Nagerecht"/>
+            <Button Content="Boeken"
+                    x:Name="btnBoeken"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Vertical">
+            <TextBox x:Name="txtNaam"/>
+            <TextBox x:Name="txtAantal"/>
+            <ComboBox x:Name="cboHoofdgerecht"/>
+            <ComboBox x:Name="cboNagerecht"/>
+            <Button x:Name="btnSluiten"
+                    Content="Sluiten"/>
+        </StackPanel>
+        <Label Grid.Row="1"
+               Grid.Column="2"
+               x:Name="lblReservaties"
+               Height="auto"/>
+    </Grid>
+</Window>
