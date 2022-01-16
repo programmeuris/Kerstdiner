@@ -32,7 +32,8 @@
         <Button x:Name="btnToonReservaties"
                 Content="Toon reservaties"
                 Grid.Row="0"
-                Grid.Column="2"/>
+                Grid.Column="2"
+                Height="auto"/>
         <StackPanel Grid.Row="1"
                     Grid.Column="0"
                     Orientation="Vertical">
